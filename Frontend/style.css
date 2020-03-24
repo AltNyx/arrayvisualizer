@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+.main{
+    text-align: center;
+    margin: 0px 100px 100px 100px;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Product Sans';
+    background-color: #000;
+}
+
+#head{
+    background-color: #000;
+    padding: 0px;
+    height: 100px;
+}
+
+.head_name a{
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 20px;
+    float: left;
+    color: cyan;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 1.5s ease;
+    
+    
+}
+
+.head_name a:hover{
+    color: #fff;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+ul li{
+    display: inline-block;
+    
+}
+
+ul li a{
+    
+    text-decoration: none;
+    color: cyan;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 1s ease;
+    
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+/*/////////////////////////////////////////////HEAD DONE/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+img{
+    height: 35%;
+    width: 35%;
+    margin: 0;
+}
+
+
+.container{
+    text-align: center;
+}
+
+section{
+    margin: 50px 0px 50px 0px;
+    height: 67vh;
+    width: auto;
+    align-items: flex-start;
+    display: inline-flex;
+    border: 10px solid #fff;
+}
+
+
+#sec1{
+    background-color: #00ffff;
+    
+}
+
+
+
+#sec1 img{
+    margin: 15px;
+    clear: both;
+    float: left;
+    border: 10px solid #fff;
+}
+
+
+#sec2{
+    background-color: #a83be3;
+    
+}
+
+#sec2 img{
+    clear: both;
+    margin: 15px;
+    float: right;
+    border: 10px solid #fff;
+}
+
+
+#sec3{
+    background-color: #e92986;
+    
+}
+
+#sec3 img{
+    margin: 15px;
+    clear: both;
+    float: left;
+    border: 10px solid #fff;
+}
+
+
+#sec4{
+    background-color: #f55252;
+    
+}
+
+#sec4 img{
+    margin: 15px;
+    clear: both;
+    float: right;
+    border: 10px solid #fff;
+}
+
+
+
+#sec5{
+    background-color: #2cef53;
+    
+}
+
+#sec5 img{
+    float: left;
+    padding: 0px;
+    margin: 15px;
+    clear: both;
+    border: 10px solid #fff;
+}
+
+
+
+#sec6{
+    background-color: #6026e8;
+}
+
+#sec6 img{
+    margin: 15px;
+    clear: both;
+    float: right;
+    border: 10px solid #fff;
+}
+
+
+
+#sec1 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+#sec2 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
+
+#sec3 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
+
+#sec4 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
+
+#sec5 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
+
+#sec6 a{
+    text-decoration:none;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
