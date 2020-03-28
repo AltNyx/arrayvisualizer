@@ -168,7 +168,6 @@ while low <= high:
                 break
             tk.update()
             time.sleep(0.01)
-,
         high = mid - 1
 
 if len(message_box) != 0:
