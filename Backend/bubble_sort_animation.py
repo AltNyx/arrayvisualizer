@@ -1,6 +1,7 @@
 import random
 import time
 from tkinter import *
+import timeit
 
 n = 20
 
@@ -26,6 +27,23 @@ new_arr = []
 for i in range(n):
     new_arr.append(random.randrange(1,50))
 #new_arr = [25, 34, 18, 21, 13, 5, 15, 7, 9, 10, 16, 15, 13, 19, 34, 9, 4, 3, 2, 7]
+
+nums = new_arr.copy()
+#EXECUTION TIME
+SETUP = '''
+from bubble_sort import bubble_sort
+from __main__ import nums
+'''
+CODE = '''
+sorted_arr = bubble_sort(nums, len(nums))
+'''
+execution_time = timeit.timeit(setup=SETUP, stmt=CODE, number=1000)  #time of 1000 executions in seconds
+sorting_time = "%.5f ms" %(execution_time)
+
+#execution time display
+h_pos = WIDTH - 100
+y_pos = 50
+canvas.create_text(h_pos, y_pos, text="Sorting time\n{}".format(sorting_time), font = "none 12 bold", fill="#2299ab")
 
 #empty array to store individual box and text so that they could be animated
 boxes = []
