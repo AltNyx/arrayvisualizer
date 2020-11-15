@@ -12,6 +12,12 @@ Animation on array operations (searching, sorting, insertion, deletion, creation
 
 ![](output/selection.png)
 
+## Searching
+
+### Binary Search
+
+![](output/binary.png)
+
 ## Array Operations
 
 ### Create
