@@ -4,19 +4,24 @@ Animation on array operations (searching, sorting, insertion, deletion, creation
 
 ## Sorting
 
-### Bubble Sort  
+### Bubble Sort
+
 ![](output/bubble.png)
 
 ### Selection Sort
+
 ![](output/selection.png)
 
 ## Array Operations
 
-### Create  
+### Create
+
 ![](output/create.png)
 
-### Insert  
+### Insert
+
 ![](output/insert.png)
 
-### Remove  
+### Remove
+
 ![](output/remove.png)

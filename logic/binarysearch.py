@@ -12,7 +12,7 @@ canvas.pack()
 
 # heading
 canvas.create_text(WIDTH / 2, 75, text="Binary Search",
-                   font="none 25 bold underline italic", fill="Green2")
+                   font="none 25 bold underline italic", fill="purple2")
 
 # position of base rectangle
 x1 = (WIDTH / 2) - (num / 2 * 50)
@@ -27,7 +27,7 @@ canvas.create_text(x1 - 30, y1 + 25, text="Arr",
 
 
 for i in range(0, num):
-    canvas.create_rectangle(x1, y1, x2, y2, fill="Green2")
+    canvas.create_rectangle(x1, y1, x2, y2, fill="purple2")
     x1 += 50
     x2 += 50
 
@@ -90,27 +90,29 @@ position_box = []  # contains low --> high --> mid
 text_box = []
 
 low = 0
+
+col = "purple2"
 position_box.append(canvas.create_rectangle(
-    x1_low, y1_low, x2_low, y2_low, fill="cyan"))
+    x1_low, y1_low, x2_low, y2_low, fill=col))
 text_box.append(canvas.create_text(x1_low + 25, y1_low +
                                    25, text="Low", font="none 10 bold"))
 
 high = num - 1
 position_box.append(canvas.create_rectangle(
-    x1_high, y1_high, x2_high, y2_high, fill="cyan"))
+    x1_high, y1_high, x2_high, y2_high, fill=col))
 text_box.append(canvas.create_text(x1_high + 25, y1_high +
                                    25, text="High", font="none 10 bold"))
 
 mid = (high + low) // 2
 position_box.append(canvas.create_rectangle(
-    x1_mid, y1_mid, x2_mid, y2_mid, fill="cyan"))
+    x1_mid, y1_mid, x2_mid, y2_mid, fill=col))
 text_box.append(canvas.create_text(x1_mid + 25, y1_mid +
                                    25, text="Mid", font="none 10 bold"))
 
 key = int(input("Enter key to be searched:"))
 
 # animation speed
-xspeed = 1.5
+xspeed = 1
 yspeed = 0
 
 # message_array
@@ -123,13 +125,13 @@ while low <= high:
         if len(message_box) != 0:
             canvas.delete(message_box[0])
         canvas.create_text(WIDTH / 2, HEIGHT - HEIGHT / 8, text="Key is found at position %d" %
-                           (mid + 1), font="none 20 italic bold", fill="lime")
+                           (mid + 1), font="none 20 italic bold", fill="purple2")
         break
     elif key > element_array[mid]:
         if len(message_box) != 0:
             canvas.delete(message_box[0])
         message_box.append(canvas.create_text(WIDTH / 2, HEIGHT - HEIGHT / 8,
-                                              text="Key > Arr[mid]", font="none 20 italic bold", fill="lime"))
+                                              text="Key > Arr[mid]", font="none 20 italic bold", fill="purple2"))
         while True:
             canvas.move(position_box[0], xspeed, yspeed)
             canvas.move(text_box[0], xspeed, yspeed)
@@ -156,7 +158,7 @@ while low <= high:
         if len(message_box) != 0:
             canvas.delete(message_box[0])
         message_box.append(canvas.create_text(WIDTH / 2, HEIGHT - HEIGHT / 8,
-                                              text="Key < Arr[Mid]", font="none 20 italic bold", fill="lime"))
+                                              text="Key < Arr[Mid]", font="none 20 italic bold", fill="purple2"))
         while True:
             canvas.move(position_box[1], -xspeed, yspeed)
             canvas.move(text_box[1], -xspeed, yspeed)
@@ -179,12 +181,15 @@ while low <= high:
             time.sleep(0.01)
         high = mid - 1
 
-if len(message_box) != 0:
-    canvas.delete(message_box[0])
+# if len(message_box) != 0:
+#     canvas.delete(message_box[0])
+
+while message_box:
+    canvas.delete(message_box.pop())
 
 if high < low:
     canvas.create_text(WIDTH / 2, HEIGHT - HEIGHT / 8,
-                       text="Key not found", font="none 20 italic bold", fill="lime")
+                       text="Key not found", font="none 20 italic bold", fill="purple2")
 
 
 # #insertion animation

@@ -6,12 +6,12 @@ n = int(input("Enter num of elements:"))
 tk = Tk()
 tk.title("Animaitons")
 HEIGHT = 500
-WIDTH = 700
+WIDTH = 1000
 canvas = Canvas(tk, height = HEIGHT, width = WIDTH)
 canvas.pack()
 
 #heading
-canvas.create_text(WIDTH / 2, 75, text = "INSERT ELEMENT", font = "none 25 bold underline italic", fill = "Green2")
+canvas.create_text(WIDTH / 2, 75, text = "INSERT ELEMENT", font = "none 25 bold underline italic", fill = "purple2")
 
 #position of base rectangle
 x1 = (WIDTH / 2) - (num / 2 * 50)
@@ -25,7 +25,7 @@ canvas.create_text(x1 - 30, y1 + 25, text = "Arr", font = "none 20 bold", fill =
 
 
 for i in range(0, num):
-    canvas.create_rectangle(x1, y1, x2, y2, fill = "Green2")
+    canvas.create_rectangle(x1, y1, x2, y2, fill = "purple2")
     x1 += 50
     x2 += 50
 
@@ -98,6 +98,6 @@ else:
         time.sleep(0.01)
 
     #inserted at position text
-    canvas.create_text(WIDTH / 2, txt_y1 + 150, text = "The element %d inserted at position %d" %(ele,pos), font = "none 20 bold italic underline", fill = "Green2")
+    canvas.create_text(WIDTH / 2, txt_y1 + 150, text = "The element %d inserted at position %d" %(ele,pos), font = "none 20 bold italic underline", fill = "purple2")
         
 canvas.mainloop()

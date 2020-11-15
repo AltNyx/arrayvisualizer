@@ -4,8 +4,8 @@ n = int(input("Enter num of elements:"))
 
 tk = Tk()
 tk.title("Animaitons")
-HEIGHT = 2000
-WIDTH = 2000
+HEIGHT = 500
+WIDTH = 1000
 canvas = Canvas(tk, height = HEIGHT, width = WIDTH)
 
 canvas.pack()

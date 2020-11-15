@@ -30,7 +30,7 @@ for i in range(n):
 nums = new_arr.copy()
 #EXECUTION TIME
 SETUP = '''
-from selection_sort_algorithm import selection_sort
+from algorithms.selection_sort_algorithm import selection_sort
 from __main__ import nums
 '''
 CODE = '''

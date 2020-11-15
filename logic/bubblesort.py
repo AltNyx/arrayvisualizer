@@ -31,7 +31,7 @@ for i in range(n):
 nums = new_arr.copy()
 #EXECUTION TIME
 SETUP = '''
-from bubble_sort_algorithm import bubble_sort
+from algorithms.bubble_sort_algorithm import bubble_sort
 from __main__ import nums
 '''
 CODE = '''
